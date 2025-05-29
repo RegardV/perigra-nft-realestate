@@ -1,18 +1,18 @@
 [build]
-  command = "cd app && npm install && npm run build"
+  command = "cd app && yarn install && yarn build && yarn export"
   publish = "app/out"
-  
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [build.environment]
-  NEXT_OUTPUT_MODE = "export"
   NODE_VERSION = "18"
 
-# Handle Next.js routes properly
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-# Set custom headers for security, caching, etc.
 [[headers]]
   for = "/*"
   [headers.values]
@@ -20,7 +20,6 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
 
-# Set cache control for static assets
 [[headers]]
   for = "/_next/static/*"
   [headers.values]

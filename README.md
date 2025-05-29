@@ -6,7 +6,7 @@ Perigra is a modern real estate investment platform that uses blockchain technol
 
 Below is a screenshot of the Perigra app interface, showcasing its design and functionality:
 
-<img src="https://raw.githubusercontent.com/RegardV/perigra-nft-realestate/main/home-perigra.png" alt="Perigra App Interface" width="33%">
+<img src="/home-perigra.png" alt="Perigra App Interface" width="33%">
 
 
 ## Features
