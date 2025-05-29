@@ -1,0 +1,125 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+   We detected TypeScript in your project and reconfigured your tsconfig.json file for you. Strict-mode is set to false by default.
+   The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+   	- include was updated to add '.dev/types/**/*.ts'
+
+ ✓ Ready in 1290ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5.2s (1255 modules)
+ HEAD / 200 in 5559ms
+ GET / 200 in 2753ms
+ ✓ Compiled in 595ms (631 modules)
+ HEAD / 200 in 82ms
+ HEAD / 200 in 87ms
+ ○ Compiling /invest ...
+ ✓ Compiled /invest in 3.5s (1396 modules)
+ HEAD / 200 in 3625ms
+ HEAD /invest 200 in 3694ms
+ HEAD /invest 200 in 104ms
+ ✓ Compiled /rent in 350ms (1408 modules)
+ HEAD /rent 200 in 429ms
+ HEAD /rent 200 in 473ms
+ ✓ Compiled /listings in 326ms (1422 modules)
+ HEAD /listings 200 in 435ms
+ HEAD /listings 200 in 436ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 1215ms (1446 modules)
+ HEAD /login 200 in 1320ms
+ HEAD /about 200 in 1323ms
+ ○ Compiling /how-it-works ...
+ ✓ Compiled /how-it-works in 794ms (1468 modules)
+ HEAD /how-it-works 200 in 899ms
+ HEAD /signup 200 in 903ms
+ ○ Compiling /listings/[id] ...
+ ✓ Compiled /listings/[id] in 804ms (1483 modules)
+ HEAD /contact 404 in 850ms
+ HEAD /privacy 404 in 17ms
+ HEAD /terms 404 in 12ms
+ HEAD /cookies 404 in 12ms
+ HEAD /listings/1 200 in 1196ms
+ HEAD /invest?property=1 200 in 59ms
+ HEAD /listings/2 200 in 46ms
+ HEAD /invest?property=2 200 in 38ms
+ HEAD /listings/3 200 in 32ms
+ HEAD /invest?property=3 200 in 49ms
+ GET / 200 in 406ms
+ GET /privacy 404 in 388ms
+ GET /contact 404 in 388ms
+ GET /cookies 404 in 384ms
+ GET /terms 404 in 388ms
+ GET /invest 200 in 413ms
+ GET /invest?property=1 200 in 410ms
+ GET /invest?property=2 200 in 408ms
+ GET /rent 200 in 417ms
+ GET /listings 200 in 416ms
+ GET /login 200 in 416ms
+ GET /signup 200 in 415ms
+ GET /listings/3 200 in 402ms
+ GET /listings/1 200 in 408ms
+ GET /listings/2 200 in 401ms
+ GET /invest?property=3 200 in 406ms
+ GET /how-it-works 200 in 404ms
+ GET /about 200 in 402ms
+ HEAD /forgot-password 404 in 20ms
+ HEAD /listings/4 200 in 92ms
+ HEAD /listings/4 200 in 90ms
+ HEAD /listings/4 200 in 91ms
+ HEAD /listings/4 200 in 93ms
+ HEAD /listings/4 200 in 94ms
+ HEAD /listings/4 200 in 115ms
+ HEAD /invest?property=4 200 in 111ms
+ HEAD /invest?property=4 200 in 114ms
+ HEAD /invest?property=4 200 in 114ms
+ HEAD /invest?property=4 200 in 116ms
+ HEAD /invest?property=4 200 in 118ms
+ HEAD /invest?property=4 200 in 133ms
+ HEAD /listings/5 200 in 84ms
+ HEAD /listings/5 200 in 85ms
+ HEAD /listings/5 200 in 82ms
+ HEAD /listings/5 200 in 82ms
+ HEAD /listings/5 200 in 75ms
+ HEAD /listings/5 200 in 102ms
+ HEAD /invest?property=5 200 in 124ms
+ HEAD /invest?property=5 200 in 127ms
+ HEAD /invest?property=5 200 in 128ms
+ HEAD /invest?property=5 200 in 133ms
+ HEAD /invest?property=5 200 in 133ms
+ HEAD /invest?property=5 200 in 135ms
+ HEAD /listings/6 200 in 88ms
+ HEAD /listings/6 200 in 91ms
+ HEAD /listings/6 200 in 88ms
+ HEAD /listings/6 200 in 88ms
+ HEAD /listings/6 200 in 98ms
+ HEAD /invest?property=6 200 in 105ms
+ HEAD /invest?property=6 200 in 105ms
+ HEAD /invest?property=6 200 in 106ms
+ HEAD /invest?property=6 200 in 107ms
+ HEAD /invest?property=6 200 in 112ms
+ GET /forgot-password 404 in 19ms
+ GET /invest?property=6 200 in 149ms
+ GET /invest?property=5 200 in 148ms
+ GET /invest?property=4 200 in 145ms
+ GET /listings/5 200 in 145ms
+ GET /listings/6 200 in 145ms
+ GET /listings/4 200 in 145ms
+ ✓ Compiled in 958ms (1497 modules)
+ ✓ Compiled in 817ms (1497 modules)
+ ✓ Compiled in 727ms (747 modules)
+ ✓ Compiled in 692ms (747 modules)
+ ✓ Compiled in 717ms (747 modules)
+[?25h

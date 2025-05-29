@@ -1,0 +1,14 @@
+ ⨯ TypeError: Cannot read properties of undefined (reading 'length')
+    at installChunk (/home/ubuntu/provena/app/.dev/server/webpack-runtime.js:193:41)
+    at __webpack_require__.f.require (/home/ubuntu/provena/app/.dev/server/webpack-runtime.js:203:15)
+    at /home/ubuntu/provena/app/.dev/server/webpack-runtime.js:111:40
+    at Array.reduce (<anonymous>)
+    at __webpack_require__.e (/home/ubuntu/provena/app/.dev/server/webpack-runtime.js:110:67)
+    at Array.map (<anonymous>)
+    at __webpack_require__.X (/home/ubuntu/provena/app/.dev/server/webpack-runtime.js:162:22)
+    at /home/ubuntu/provena/app/.dev/server/app/listings/[id]/page.js:254:47
+    at Object.<anonymous> (/home/ubuntu/provena/app/.dev/server/app/listings/[id]/page.js:257:3)
+    at Module._compile (node:internal/modules/cjs/loader:1554:14) {
+  type: 'TypeError',
+  page: '/listings/1'
+}

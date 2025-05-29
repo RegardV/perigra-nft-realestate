@@ -1,0 +1,86 @@
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/provena/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  password  String
+  role      String   @default("user") // user, investor, admin
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  investments Investment[]
+  rentals     Rental[]
+
+  @@map("users")
+}
+
+model Property {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  address     String
+  city        String
+  state       String
+  zipCode     String
+  price       Float
+  bedrooms    Int
+  bathrooms   Float
+  sqft        Int
+  propertyType String // apartment, house, condo, etc.
+  imageUrl    String
+  images      String[] // Additional images
+  tokenPrice  Float    // Price per token
+  totalTokens Int      // Total tokens available
+  availableTokens Int  // Available tokens for investment
+  expectedReturn Float // Expected annual return percentage
+  isAvailable Boolean  @default(true)
+  isForRent   Boolean  @default(false)
+  isForInvest Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  investments Investment[]
+  rentals     Rental[]
+
+  @@map("properties")
+}
+
+model Investment {
+  id         String   @id @default(cuid())
+  userId     String
+  propertyId String
+  tokens     Int
+  amount     Float
+  createdAt  DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id])
+  property Property @relation(fields: [propertyId], references: [id])
+
+  @@map("investments")
+}
+
+model Rental {
+  id         String   @id @default(cuid())
+  userId     String
+  propertyId String
+  startDate  DateTime
+  endDate    DateTime
+  monthlyRent Float
+  status     String   @default("pending") // pending, active, completed
+  createdAt  DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id])
+  property Property @relation(fields: [propertyId], references: [id])
+
+  @@map("rentals")
+}

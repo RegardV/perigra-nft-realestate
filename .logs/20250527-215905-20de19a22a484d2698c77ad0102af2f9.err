@@ -1,0 +1,236 @@
+
+
+===== TS errors =====
+
+[Test Mode] ./app/invest/page.tsx:32:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to type 'never[]'.
+    Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }' is not assignable to type 'never'.
+
+[0m [90m 30 |[39m     [36mtry[39m {[0m
+[0m [90m 31 |[39m       [36mconst[39m investmentProperties [33m=[39m mockProperties[33m.[39mfilter(p [33m=>[39m p[33m.[39misForInvest)[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m       setFilteredProperties(investmentProperties)[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 33 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 34 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 35 |[39m       console[33m.[39merror([32m'Error loading investment properties:'[39m[33m,[39m err)[0m
+
+[Test Mode] ./app/invest/page.tsx:36:16
+Type error: Argument of type '"Failed to load investment properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 34 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 35 |[39m       console[33m.[39merror([32m'Error loading investment properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 36 |[39m       setError([32m'Failed to load investment properties'[39m)[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 37 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 38 |[39m     }[0m
+[0m [90m 39 |[39m   }[33m,[39m [])[0m
+
+[Test Mode] ./app/invest/page.tsx:41:31
+Type error: Parameter 'filters' implicitly has an 'any' type.
+
+[0m [90m 39 |[39m   }[33m,[39m [])[0m
+[0m [90m 40 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 41 |[39m   [36mconst[39m handleFilterChange [33m=[39m (filters) [33m=>[39m {[0m
+[0m [90m    |[39m                               [31m[1m^[22m[39m[0m
+[0m [90m 42 |[39m     [36mtry[39m {[0m
+[0m [90m 43 |[39m       [36mlet[39m filtered [33m=[39m mockProperties[33m.[39mfilter(p [33m=>[39m p[33m.[39misForInvest)[0m
+[0m [90m 44 |[39m[0m
+
+[Test Mode] ./app/invest/page.tsx:83:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+
+[0m [90m 81 |[39m       }[0m
+[0m [90m 82 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 83 |[39m       setFilteredProperties(filtered)[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 84 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 85 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m [90m 86 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+
+[Test Mode] ./app/invest/page.tsx:86:16
+Type error: Argument of type '"Failed to filter properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 84 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 85 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 86 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 87 |[39m     }[0m
+[0m [90m 88 |[39m   }[0m
+[0m [90m 89 |[39m[0m
+
+[Test Mode] ./app/invest/page.tsx:261:33
+Type error: Property 'id' does not exist on type 'never'.
+
+[0m [90m 259 |[39m               {filteredProperties[33m.[39mmap((property[33m,[39m index) [33m=>[39m ([0m
+[0m [90m 260 |[39m                 [33m<[39m[33mPropertyCard[39m[0m
+[0m[31m[1m>[22m[39m[90m 261 |[39m                   key[33m=[39m{property[33m.[39mid}[0m
+[0m [90m     |[39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 262 |[39m                   property[33m=[39m{property}[0m
+[0m [90m 263 |[39m                   showInvestmentInfo[33m=[39m{[36mtrue[39m}[0m
+[0m [90m 264 |[39m                   className[33m=[39m{[32m`animate-delay-${(index % 3 + 1) * 100}`[39m}[0m
+
+[Test Mode] ./app/listings/page.tsx:30:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to type 'never[]'.
+    Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }' is not assignable to type 'never'.
+
+[0m [90m 28 |[39m   useEffect(() [33m=>[39m {[0m
+[0m [90m 29 |[39m     [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 30 |[39m       setFilteredProperties([[33m...[39mmockProperties])[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 31 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 32 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 33 |[39m       console[33m.[39merror([32m'Error loading properties:'[39m[33m,[39m err)[0m
+
+[Test Mode] ./app/listings/page.tsx:34:16
+Type error: Argument of type '"Failed to load properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 32 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 33 |[39m       console[33m.[39merror([32m'Error loading properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 34 |[39m       setError([32m'Failed to load properties'[39m)[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 35 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 36 |[39m     }[0m
+[0m [90m 37 |[39m   }[33m,[39m [])[0m
+
+[Test Mode] ./app/listings/page.tsx:39:31
+Type error: Parameter 'filters' implicitly has an 'any' type.
+
+[0m [90m 37 |[39m   }[33m,[39m [])[0m
+[0m [90m 38 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 39 |[39m   [36mconst[39m handleFilterChange [33m=[39m (filters) [33m=>[39m {[0m
+[0m [90m    |[39m                               [31m[1m^[22m[39m[0m
+[0m [90m 40 |[39m     [36mtry[39m {[0m
+[0m [90m 41 |[39m       [36mlet[39m filtered [33m=[39m [[33m...[39mmockProperties][0m
+[0m [90m 42 |[39m[0m
+
+[Test Mode] ./app/listings/page.tsx:122:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+
+[0m [90m 120 |[39m       })[0m
+[0m [90m 121 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 122 |[39m       setFilteredProperties(filtered)[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 123 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 124 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m [90m 125 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+
+[Test Mode] ./app/listings/page.tsx:125:16
+Type error: Argument of type '"Failed to filter properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 123 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 124 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 125 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+[0m [90m     |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 126 |[39m     }[0m
+[0m [90m 127 |[39m   }[0m
+[0m [90m 128 |[39m[0m
+
+[Test Mode] ./app/listings/page.tsx:129:29
+Type error: Parameter 'newSortBy' implicitly has an 'any' type.
+
+[0m [90m 127 |[39m   }[0m
+[0m [90m 128 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 129 |[39m   [36mconst[39m handleSortChange [33m=[39m (newSortBy) [33m=>[39m {[0m
+[0m [90m     |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 130 |[39m     [36mtry[39m {[0m
+[0m [90m 131 |[39m       [36mif[39m (sortBy [33m===[39m newSortBy) {[0m
+[0m [90m 132 |[39m         setSortOrder(sortOrder [33m===[39m [32m'asc'[39m [33m?[39m [32m'desc'[39m [33m:[39m [32m'asc'[39m)[0m
+
+[Test Mode] ./app/listings/page.tsx:291:33
+Type error: Property 'id' does not exist on type 'never'.
+
+[0m [90m 289 |[39m               {filteredProperties[33m.[39mmap((property[33m,[39m index) [33m=>[39m ([0m
+[0m [90m 290 |[39m                 [33m<[39m[33mPropertyCard[39m[0m
+[0m[31m[1m>[22m[39m[90m 291 |[39m                   key[33m=[39m{property[33m.[39mid}[0m
+[0m [90m     |[39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 292 |[39m                   property[33m=[39m{property}[0m
+[0m [90m 293 |[39m                   showInvestmentInfo[33m=[39m{[36mtrue[39m}[0m
+[0m [90m 294 |[39m                   className[33m=[39m{[32m`animate-delay-${(index % 6 + 1) * 100}`[39m}[0m
+
+[Test Mode] ./app/rent/page.tsx:31:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+
+[0m [90m 29 |[39m     [36mtry[39m {[0m
+[0m [90m 30 |[39m       [36mconst[39m rentalProperties [33m=[39m mockProperties[33m.[39mfilter(p [33m=>[39m p[33m.[39misForRent)[0m
+[0m[31m[1m>[22m[39m[90m 31 |[39m       setFilteredProperties(rentalProperties)[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 32 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 33 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 34 |[39m       console[33m.[39merror([32m'Error loading rental properties:'[39m[33m,[39m err)[0m
+
+[Test Mode] ./app/rent/page.tsx:35:16
+Type error: Argument of type '"Failed to load rental properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 33 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 34 |[39m       console[33m.[39merror([32m'Error loading rental properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 35 |[39m       setError([32m'Failed to load rental properties'[39m)[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 36 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 37 |[39m     }[0m
+[0m [90m 38 |[39m   }[33m,[39m [])[0m
+
+[Test Mode] ./app/rent/page.tsx:40:31
+Type error: Parameter 'filters' implicitly has an 'any' type.
+
+[0m [90m 38 |[39m   }[33m,[39m [])[0m
+[0m [90m 39 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 40 |[39m   [36mconst[39m handleFilterChange [33m=[39m (filters) [33m=>[39m {[0m
+[0m [90m    |[39m                               [31m[1m^[22m[39m[0m
+[0m [90m 41 |[39m     [36mtry[39m {[0m
+[0m [90m 42 |[39m       [36mlet[39m filtered [33m=[39m mockProperties[33m.[39mfilter(p [33m=>[39m p[33m.[39misForRent)[0m
+[0m [90m 43 |[39m[0m
+
+[Test Mode] ./app/rent/page.tsx:78:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+
+[0m [90m 76 |[39m       }[0m
+[0m [90m 77 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 78 |[39m       setFilteredProperties(filtered)[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 79 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 80 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m [90m 81 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+
+[Test Mode] ./app/rent/page.tsx:81:16
+Type error: Argument of type '"Failed to filter properties"' is not assignable to parameter of type 'SetStateAction<null>'.
+
+[0m [90m 79 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 80 |[39m       console[33m.[39merror([32m'Error filtering properties:'[39m[33m,[39m err)[0m
+[0m[31m[1m>[22m[39m[90m 81 |[39m       setError([32m'Failed to filter properties'[39m)[0m
+[0m [90m    |[39m                [31m[1m^[22m[39m[0m
+[0m [90m 82 |[39m     }[0m
+[0m [90m 83 |[39m   }[0m
+[0m [90m 84 |[39m[0m
+
+[Test Mode] ./app/rent/page.tsx:233:33
+Type error: Property 'id' does not exist on type 'never'.
+
+[0m [90m 231 |[39m               {filteredProperties[33m.[39mmap((property[33m,[39m index) [33m=>[39m ([0m
+[0m [90m 232 |[39m                 [33m<[39m[33mPropertyCard[39m[0m
+[0m[31m[1m>[22m[39m[90m 233 |[39m                   key[33m=[39m{property[33m.[39mid}[0m
+[0m [90m     |[39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 234 |[39m                   property[33m=[39m{property}[0m
+[0m [90m 235 |[39m                   showInvestmentInfo[33m=[39m{[36mfalse[39m}[0m
+[0m [90m 236 |[39m                   className[33m=[39m{[32m`animate-delay-${(index % 3 + 1) * 100}`[39m}[0m
+
+===== TS errors =====
+
+
+Failed to compile.
+
+./app/invest/page.tsx:32:29
+Type error: Argument of type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }[]' is not assignable to type 'never[]'.
+    Type '{ id: string; title: string; description: string; address: string; city: string; state: string; zipCode: string; price: number; bedrooms: number; bathrooms: number; sqft: number; propertyType: string; ... 10 more ...; updatedAt: Date; }' is not assignable to type 'never'.
+
+[0m [90m 30 |[39m     [36mtry[39m {[0m
+[0m [90m 31 |[39m       [36mconst[39m investmentProperties [33m=[39m mockProperties[33m.[39mfilter(p [33m=>[39m p[33m.[39misForInvest)[0m
+[0m[31m[1m>[22m[39m[90m 32 |[39m       setFilteredProperties(investmentProperties)[0m
+[0m [90m    |[39m                             [31m[1m^[22m[39m[0m
+[0m [90m 33 |[39m       setIsLoading([36mfalse[39m)[0m
+[0m [90m 34 |[39m     } [36mcatch[39m (err) {[0m
+[0m [90m 35 |[39m       console[33m.[39merror([32m'Error loading investment properties:'[39m[33m,[39m err)[0m
+Next.js build worker exited with code: 1 and signal: null
+error Command failed with exit code 1.

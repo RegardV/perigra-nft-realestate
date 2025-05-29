@@ -1,0 +1,53 @@
+yarn run v1.22.22
+$ next build
+  ▲ Next.js 14.2.28
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/18) ...
+   Generating static pages (4/18) 
+   Generating static pages (8/18) 
+   Generating static pages (13/18) 
+ ✓ Generating static pages (18/18)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    4.97 kB         158 kB
+├ ○ /_not-found                          871 B            88 kB
+├ ○ /about                               4.02 kB         153 kB
+├ ƒ /api/auth/login                      0 B                0 B
+├ ƒ /api/investments                     0 B                0 B
+├ ƒ /api/properties                      0 B                0 B
+├ ƒ /api/properties/[id]                 0 B                0 B
+├ ƒ /api/users                           0 B                0 B
+├ ○ /careers                             7.72 kB         152 kB
+├ ○ /contact                             3.15 kB         147 kB
+├ ○ /cookies                             3.31 kB         147 kB
+├ ○ /dashboard                           5.27 kB         149 kB
+├ ○ /forgot-password                     2.54 kB         147 kB
+├ ○ /how-it-works                        4.42 kB         148 kB
+├ ○ /invest                              3.27 kB         183 kB
+├ ○ /listings                            2.47 kB         182 kB
+├ ƒ /listings/[id]                       5.61 kB         155 kB
+├ ○ /login                               11.2 kB         163 kB
+├ ○ /privacy                             2.98 kB         147 kB
+├ ○ /rent                                3.4 kB          183 kB
+├ ○ /signup                              3.5 kB          147 kB
+└ ○ /terms                               3.32 kB         147 kB
++ First Load JS shared by all            87.1 kB
+  ├ chunks/275-1761cc6be42edbea.js       31.6 kB
+  ├ chunks/a0b5f63a-93474dd3ad519a8b.js  53.6 kB
+  └ other shared chunks (total)          1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Done in 12.15s.

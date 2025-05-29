@@ -1,0 +1,56 @@
+yarn run v1.22.22
+$ next build
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+  ▲ Next.js 14.2.28
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Skipping linting
+   Checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/17) ...
+   Generating static pages (4/17) 
+   Generating static pages (8/17) 
+   Generating static pages (12/17) 
+ ✓ Generating static pages (17/17)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    4.96 kB         155 kB
+├ ○ /_not-found                          873 B            88 kB
+├ ○ /about                               4.02 kB         151 kB
+├ ƒ /api/auth/login                      0 B                0 B
+├ ƒ /api/investments                     0 B                0 B
+├ ƒ /api/properties                      0 B                0 B
+├ ƒ /api/properties/[id]                 0 B                0 B
+├ ƒ /api/users                           0 B                0 B
+├ ○ /contact                             3.15 kB         145 kB
+├ ○ /cookies                             3.31 kB         145 kB
+├ ○ /dashboard                           5.27 kB         147 kB
+├ ○ /forgot-password                     2.54 kB         144 kB
+├ ○ /how-it-works                        4.42 kB         146 kB
+├ ○ /invest                              3.27 kB         180 kB
+├ ○ /listings                            2.47 kB         179 kB
+├ ƒ /listings/[id]                       5.6 kB          152 kB
+├ ○ /login                               2.83 kB         144 kB
+├ ○ /privacy                             2.98 kB         144 kB
+├ ○ /rent                                3.39 kB         180 kB
+├ ○ /signup                              3.5 kB          145 kB
+└ ○ /terms                               3.32 kB         145 kB
++ First Load JS shared by all            87.1 kB
+  ├ chunks/364-a1b44911fc8a7638.js       31.6 kB
+  ├ chunks/618f8807-5214014eabb2c3cd.js  53.6 kB
+  └ other shared chunks (total)          1.9 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Done in 32.78s.

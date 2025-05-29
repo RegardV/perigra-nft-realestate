@@ -1,0 +1,32 @@
+
+
+===== TS errors =====
+
+[Test Mode] ./app/page.tsx:513:8
+Type error: Property 'testimonials' is missing in type '{}' but required in type 'TestimonialsProps'.
+
+[0m [90m 511 |[39m[0m
+[0m [90m 512 |[39m       {[90m/* Testimonials */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 513 |[39m       [33m<[39m[33mTestimonials[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 514 |[39m[0m
+[0m [90m 515 |[39m       {[90m/* CTA Section */[39m}[0m
+[0m [90m 516 |[39m       [33m<[39m[33msection[39m className[33m=[39m[32m"py-20 bg-gradient-to-r from-accent-brand to-accent-brand-dark"[39m[33m>[39m[0m
+
+===== TS errors =====
+
+
+Failed to compile.
+
+./app/page.tsx:513:8
+Type error: Property 'testimonials' is missing in type '{}' but required in type 'TestimonialsProps'.
+
+[0m [90m 511 |[39m[0m
+[0m [90m 512 |[39m       {[90m/* Testimonials */[39m}[0m
+[0m[31m[1m>[22m[39m[90m 513 |[39m       [33m<[39m[33mTestimonials[39m [33m/[39m[33m>[39m[0m
+[0m [90m     |[39m        [31m[1m^[22m[39m[0m
+[0m [90m 514 |[39m[0m
+[0m [90m 515 |[39m       {[90m/* CTA Section */[39m}[0m
+[0m [90m 516 |[39m       [33m<[39m[33msection[39m className[33m=[39m[32m"py-20 bg-gradient-to-r from-accent-brand to-accent-brand-dark"[39m[33m>[39m[0m
+Next.js build worker exited with code: 1 and signal: null
+error Command failed with exit code 1.

@@ -1,0 +1,84 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1707ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.7s (1246 modules)
+ HEAD / 200 in 2862ms
+ ✓ Compiled in 585ms (631 modules)
+ GET / 200 in 324ms
+ HEAD / 200 in 66ms
+ HEAD / 200 in 70ms
+ ○ Compiling /invest ...
+ ✓ Compiled /invest in 1219ms (1396 modules)
+ HEAD /invest 200 in 1413ms
+ HEAD /invest 200 in 1416ms
+ ✓ Compiled /rent in 323ms (1408 modules)
+ HEAD /rent 200 in 435ms
+ HEAD /rent 200 in 441ms
+ ✓ Compiled /listings in 303ms (1422 modules)
+ HEAD /listings 200 in 402ms
+ HEAD /listings 200 in 406ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 740ms (1446 modules)
+ HEAD /login 200 in 828ms
+ HEAD /about 200 in 850ms
+ ○ Compiling /how-it-works ...
+ ✓ Compiled /how-it-works in 687ms (1468 modules)
+ HEAD /signup 200 in 792ms
+ HEAD /how-it-works 200 in 795ms
+ ○ Compiling /listings/[id] ...
+ ✓ Compiled /listings/[id] in 740ms (1494 modules)
+ HEAD /contact 200 in 865ms
+ HEAD /listings/1 200 in 1136ms
+ ○ Compiling /privacy ...
+ ✓ Compiled /privacy in 616ms (1504 modules)
+ HEAD /invest?property=1 200 in 451ms
+ HEAD /privacy 200 in 740ms
+ ○ Compiling /terms ...
+ ✓ Compiled /terms in 616ms (1516 modules)
+ HEAD /listings/2 200 in 728ms
+ HEAD /terms 200 in 769ms
+ HEAD /invest?property=2 200 in 76ms
+ ○ Compiling /cookies ...
+ ✓ Compiled /cookies in 680ms (1528 modules)
+ HEAD /cookies 200 in 819ms
+ HEAD /listings/3 200 in 785ms
+ HEAD /invest?property=3 200 in 43ms
+ GET /rent 200 in 537ms
+ GET / 200 in 533ms
+ GET /invest 200 in 535ms
+ GET /invest?property=2 200 in 531ms
+ GET /signup 200 in 536ms
+ GET /invest?property=1 200 in 530ms
+ GET /invest?property=3 200 in 527ms
+ GET /login 200 in 537ms
+ GET /listings 200 in 539ms
+ GET /listings/3 200 in 534ms
+ GET /listings/2 200 in 538ms
+ GET /listings/1 200 in 537ms
+ GET /about 200 in 536ms
+ GET /how-it-works 200 in 535ms
+ GET /contact 200 in 535ms
+ GET /privacy 200 in 535ms
+ GET /cookies 200 in 533ms
+ GET /terms 200 in 533ms
+ ○ Compiling /forgot-password ...
+ ✓ Compiled /forgot-password in 2.3s (1536 modules)
+ HEAD /forgot-password 200 in 2367ms
+ GET /forgot-password 200 in 39ms
+ GET / 200 in 79ms
+ GET / 200 in 60ms
+ GET / 200 in 52ms
+ GET / 200 in 50ms
+ GET / 200 in 43ms
+ ✓ Compiled in 1292ms (770 modules)
+ ✓ Compiled in 909ms (1399 modules)
+ ✓ Compiled in 376ms (784 modules)
+[?25h

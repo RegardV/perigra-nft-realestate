@@ -1,0 +1,80 @@
+yarn run v1.22.22
+$ next dev
+  ▲ Next.js 14.2.28
+  - Local:        http://localhost:3000
+  - Environments: .env
+  - Experiments (use with caution):
+    · outputFileTracingRoot
+
+ ✓ Starting...
+ ✓ Ready in 1725ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3s (1248 modules)
+ HEAD / 200 in 3258ms
+ GET / 200 in 690ms
+ ✓ Compiled in 638ms (632 modules)
+ HEAD / 200 in 86ms
+ HEAD / 200 in 87ms
+ ○ Compiling /invest ...
+ ✓ Compiled /invest in 911ms (1398 modules)
+ HEAD / 200 in 1068ms
+ HEAD /invest 200 in 1137ms
+ HEAD /invest 200 in 93ms
+ ✓ Compiled /rent in 310ms (1410 modules)
+ HEAD /rent 200 in 395ms
+ HEAD /rent 200 in 427ms
+ ✓ Compiled /listings in 294ms (1424 modules)
+ HEAD /listings 200 in 386ms
+ HEAD /listings 200 in 389ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 844ms (1472 modules)
+ HEAD /about 200 in 944ms
+ HEAD /login 200 in 972ms
+ ○ Compiling /signup ...
+ ✓ Compiled /signup in 661ms (1494 modules)
+ HEAD /signup 200 in 743ms
+ HEAD /how-it-works 200 in 772ms
+ ○ Compiling /careers ...
+ ✓ Compiled /careers in 536ms (1516 modules)
+ HEAD /how-it-works 200 in 626ms
+ HEAD /careers 200 in 674ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 728ms (1540 modules)
+ HEAD /contact 200 in 838ms
+ HEAD /listings/1 200 in 1132ms
+ ○ Compiling /privacy ...
+ ✓ Compiled /privacy in 614ms (1550 modules)
+ HEAD /privacy 200 in 736ms
+ HEAD /invest?property=1 200 in 480ms
+ ○ Compiling /terms ...
+ ✓ Compiled /terms in 609ms (1562 modules)
+ HEAD /listings/2 200 in 712ms
+ HEAD /terms 200 in 754ms
+ HEAD /invest?property=2 200 in 91ms
+ ○ Compiling /cookies ...
+ ✓ Compiled /cookies in 709ms (1572 modules)
+ HEAD /listings/3 200 in 766ms
+ HEAD /cookies 200 in 852ms
+ HEAD /invest?property=3 200 in 49ms
+ GET /listings 200 in 561ms
+ GET / 200 in 559ms
+ GET /rent 200 in 560ms
+ GET /login 200 in 561ms
+ GET /invest 200 in 561ms
+ GET /invest?property=1 200 in 556ms
+ GET /invest?property=2 200 in 553ms
+ GET /signup 200 in 562ms
+ GET /listings/1 200 in 559ms
+ GET /listings/2 200 in 555ms
+ GET /listings/3 200 in 551ms
+ GET /how-it-works 200 in 560ms
+ GET /invest?property=3 200 in 554ms
+ GET /careers 200 in 553ms
+ GET /contact 200 in 553ms
+ GET /about 200 in 550ms
+ GET /privacy 200 in 548ms
+ GET /terms 200 in 547ms
+ GET /cookies 200 in 547ms
+ GET / 200 in 66ms
+ GET / 200 in 51ms
+ GET / 200 in 47ms
