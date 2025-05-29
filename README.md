@@ -51,4 +51,4 @@ Perigra is a modern real estate investment platform that uses blockchain technol
   - `app/` - App router pages and layouts
   - `components/` - Reusable React components
   - `lib/` - Utility functions and shared code
-  - `prisma/` - Database schema and migrations
+  - `prisma/` - Database schema and migrations# perigra-nft-realestate
