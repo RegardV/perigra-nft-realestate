@@ -1,7 +1,9 @@
 "use client"
 
+// Force rebuild - fixed hydration issue with renamed properties
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 import CTAButton from '@/components/cta-button'
@@ -23,10 +25,10 @@ import {
   Globe,
   Target
 } from 'lucide-react'
-import { mockProperties } from '@/lib/mock-data'
+import { mockProperties as importedProperties, mockTestimonials } from '@/lib/mock-data'
 
 export default function HomePage() {
-  const featuredProperties = mockProperties.slice(0, 3)
+  const featuredProperties = importedProperties.slice(0, 3)
 
   const features = [
     {
@@ -418,7 +420,7 @@ export default function HomePage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredProperties.map((property, index) => (
+            {featuredProperties.map((property: any, index: number) => (
               <PropertyCard
                 key={property.id}
                 property={property}
